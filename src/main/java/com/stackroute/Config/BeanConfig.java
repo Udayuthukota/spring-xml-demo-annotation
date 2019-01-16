@@ -24,32 +24,32 @@ public class BeanConfig {
 
     @Bean(name="movie")
     public Movie getMovieBean(){
-        return new Movie(getActorBean1());
+        return new Movie(getActorBean());
     }
     @Bean(name="movieOne")
     public Movie getMovieBeanOne(){
-        return new Movie(getActorBean2());
+        return new Movie(getActorBeanOne());
     }
     @Bean(name="movieTwo")
     public Movie getMovieBeanTwo(){
         return new Movie(getActorBeanTwo());
     }
 
-    @Bean(name="actor1")
-    public Actor getActorBean1() {
-        Actor actor = new Actor();
-        actor.setName("Arjun");
-        actor.setGender("male");
-        actor.setAge(36);
-        return actor;
-    }
-    @Bean(name="actor2")
-    public Actor getActorBean2() {
-        Actor actor = new Actor();
-        actor.setName("Vijay devarakonda");
-        actor.setGender("male");
-        actor.setAge(31);
-        return actor;
+//    @Bean(name="actor1")
+//    public Actor getActorBean1() {
+//        Actor actor = new Actor();
+//        actor.setName("Arjun");
+//        actor.setGender("male");
+//        actor.setAge(36);
+//        return actor;
+//    }
+//    @Bean(name="actor2")
+//    public Actor getActorBean2() {
+//        Actor actor = new Actor();
+//        actor.setName("Vijay devarakonda");
+//        actor.setGender("male");
+//        actor.setAge(31);
+//        return actor;
     }
 
-}
+
